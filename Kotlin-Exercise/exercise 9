@@ -1,0 +1,22 @@
+fun main() {
+    val strings = listOf("hello", "world", "kotlin")
+    val numbers = listOf(1, 5, 2, 8, 3, 9, 4)
+    val uppercaseStrings = toUppercase(strings)
+    println("Uppercase strings: $uppercaseStrings")
+    val filteredNumbers = filterGreaterThan(numbers, 3)
+    println("Filtered numbers: $filteredNumbers")
+    val sum = sumNumbers(numbers)
+    println("Sum of numbers: $sum")
+}
+
+fun toUppercase(strings: List<String>): List<String> {
+    return strings.map { it.uppercase() }
+}
+
+fun filterGreaterThan(numbers: List<Int>, threshold: Int): List<Int> {
+    return numbers.filter { it > threshold }
+}
+
+fun sumNumbers(numbers: List<Int>): Int {
+    return numbers.reduce { sum, element -> sum + element }
+}
