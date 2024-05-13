@@ -1,0 +1,22 @@
+fun analyzeString(text: String): Triple<Int, Int, Int> {
+  val wordCount = text.split(" ").size
+  var uppercaseCount = 0
+  var vowelCount = 0
+  val vowels = setOf('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
+  
+  for (char in text) {
+    if (char.isUpperCase()) uppercaseCount++
+    if (char in vowels) vowelCount++
+  }
+
+  return Triple(wordCount, uppercaseCount, vowelCount)
+}
+
+fun main() {
+  val text = "This is a TEST String with 8 words."
+  val (wordCount, uppercaseCount, vowelCount) = analyzeString(text)
+
+  println("Words: $wordCount")
+  println("Uppercase letters: $uppercaseCount")
+  println("Vowels: $vowelCount")
+}
