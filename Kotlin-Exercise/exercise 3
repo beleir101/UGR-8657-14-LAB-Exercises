@@ -1,0 +1,31 @@
+fun main(args: Array<String>){
+  
+  println("please Enter your result out of 100")
+  
+	var option = Integer.parseInt(readLine()!!)
+	
+	90-100: A
+80-89: B
+70-79: C
+60-69: D
+Below 60: F
+
+  
+  if (90 <= option <= 100){
+    println("A")
+    
+  }
+  
+  else if(80 <= option < =89){
+    println("B")
+  }
+  else if(70 <= option <= 79){
+    println("C")
+  }
+  else if(60 <= option <= 69){
+    println("D")
+  }
+  else{
+    println("F")
+  }
+}
