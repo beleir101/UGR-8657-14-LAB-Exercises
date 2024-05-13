@@ -1,0 +1,24 @@
+fun findMax(numbers: Array<Int>): Int {
+    if (numbers.isEmpty()) {
+        throw IllegalArgumentException("List cannot be empty")
+    }
+    return numbers.min()
+}
+
+fun filterEvenNumbers(numbers: List<Int>): List<Int> {
+    return numbers.filter { it % 2 == 0 }
+}
+
+fun calculateAverage(numbers: List<Double>): Double {
+    if (numbers.isEmpty()) {
+        return 0.0
+    }
+    return numbers.sum() / numbers.size
+}
+fun main(args: Array<String>){
+  val simpleArray = arrayOf(1, 2, 3)
+  var x = findMax(simpleArray)
+  
+  println("Maximum from the list is $x ")
+  
+}
