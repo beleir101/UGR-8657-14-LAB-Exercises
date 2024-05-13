@@ -1,0 +1,21 @@
+import kotlin.random.Random
+
+fun main() {
+    println("Enter desired password length:")
+    val passwordLength = readLine()?.toIntOrNull() ?: 8 // Default to 8 if invalid input
+
+    val password = generateRandomPassword(passwordLength)
+    println("Generated password: $password")
+}
+
+fun generateRandomPassword(length: Int): String {
+    val characterSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
+    var password = ""
+
+    repeat(length) {
+        val randomIndex = Random.nextInt(characterSet.length)
+        password += characterSet[randomIndex]
+    }
+
+    return password
+}
