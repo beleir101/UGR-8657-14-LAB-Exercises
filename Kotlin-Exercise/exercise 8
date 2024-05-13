@@ -2,7 +2,7 @@ import kotlin.random.Random
 
 fun main() {
     println("Enter desired password length:")
-    val passwordLength = readLine()?.toIntOrNull() ?: 8 // Default to 8 if invalid input
+    val passwordLength = readLine()?.toIntOrNull() ?: 8 
 
     val password = generateRandomPassword(passwordLength)
     println("Generated password: $password")
