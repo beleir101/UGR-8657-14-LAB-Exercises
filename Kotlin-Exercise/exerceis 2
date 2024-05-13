@@ -1,0 +1,22 @@
+fun main(args: Array<String>){
+  
+  println("Enter the distance to be converted")
+  
+	var dist = Integer.parseInt(readLine()!!)
+  
+  println("If the unit is kilometer press 1")
+  println("If the unit is mile press 2")
+  var option = Integer.parseInt(readLine())
+  
+  if (option == 1){
+    var distInMile = dis / 1.6
+    println("The distance you entered in mile is $distInMile ")
+    
+  }
+  
+  else if(option == 2){
+    var distInKilometer = dis * 0.621371
+    println("Their distance  you entered in miles is $disInKilometer")
+  }
+
+}
