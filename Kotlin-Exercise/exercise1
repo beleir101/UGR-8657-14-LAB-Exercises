@@ -1,0 +1,38 @@
+fun main(args: Array<String>){
+  
+  println("Enter the two numbers")
+  
+	var a = Integer.parseInt(readLine()!!)
+	var b = Integer.parseInt(readLine()!!)
+  
+  println("If you want to add the numbers press 1")
+  println("If you want their difference press 2")
+  println("If you want their product press 3")
+  println("If you want to divide them press 4")
+  
+  var option = Integer.parseInt(readLine())
+  
+  if (option == 1){
+    var sum = a + b
+    println("Thier sum is $sum")
+    
+  }
+  
+  else if(option == 2){
+    var difference = a - b
+    println("Their difference is $difference")
+  }
+  else if(option == 3){
+    var prod = a*b
+    println("Their product is $prod")
+    
+  }
+  else if (option == 4){
+    if (b == 0){
+      println("Denoinator can not be zero")
+    }
+    var div = a/b
+    println("The result is $div")
+  }
+
+}
