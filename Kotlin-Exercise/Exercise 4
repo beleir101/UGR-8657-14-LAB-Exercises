@@ -1,0 +1,24 @@
+fun main(args: Array<String>){
+  
+  println("please Enter the discount decimal and the original price")
+  
+	var option = readLine()!!
+	var original = readLine()!!
+	
+	var orginalPrice : float = orginal.toFloat()
+	var discount : float = option.toFloat()
+	
+	
+
+  
+  if (discount > 0.2){
+    println("Discount is greater than 20% setting it to 20 %")
+    discount = 0.2
+  }
+  
+  var discountApplied = discount*orginalPrice
+  println("originalPrice was $originalprice")
+  println("discount decimal is $dicount")
+  var finalprice = originalPrice - discountApplied
+  println("final price is $finalprice")
+}
